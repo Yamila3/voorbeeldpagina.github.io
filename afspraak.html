@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Tandartsafspraak</title>
+</head>
+
+<body>
+<h1>Tandartsafspraak</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Justo eget magna
+fermentum iaculis eu. Eget mauris pharetra et ultrices neque ornare aenean
+euismod. Proin libero nunc consequat interdum. Dignissim enim sit amet
+venenatis urna cursus eget nunc. Ut consequat semper viverra nam libero
+justo laoreet. Gravida quis blandit turpis cursus. Maecenas sed enim ut sem
+viverra aliquet eget sit. A condimentum vitae sapien pellentesque habitant
+morbi. Facilisis mauris sit amet massa vitae tortor condimentum.
+Egestas fringilla phasellus faucibus scelerisque eleifend.
+Lorem ipsum dolor sit amet consectetur adipiscing elit. Dui faucibus in
+ornare quam viverra orci sagittis. Enim lobortis scelerisque fermentum
+dui faucibus. Phasellus faucibus scelerisque eleifend donec pretium
+vulputate sapien nec sagittis. Amet consectetur adipiscing elit
+pellentesque habitant morbi tristique senectus et. Neque ornare aenean
+euismod elementum nisi. Viverra orci sagittis eu volutpat odio facilisis
+mauris sit.</p>
+
+<table>
+  <tr>
+    <td><figure><img src="afbeeldingen/patient.jpeg" width="300" alt="Tandarts en tandartsassistente geven poets- en flosinstructie aan patiënt"></figure></td>
+    <td><figure><img src="afbeeldingen/office_dentist.jpeg" width="300" alt="Afbeelding van de tandartsenpraktijk"></figure></td>
+    <td><figure><img src="afbeeldingen/tandarts.jpeg" width="300" alt="Tandarts geeft uitleg aan patiënt"></figure></td>
+  </tr>
+</table>
+
+
+
+<form action="https://formspree.io/f/mrgdzejg" method="POST">
+  <fieldset><legend><strong>Persoonlijke gegevens</strong></legend>
+    <table width="500" border="0">
+      <tbody>
+        <tr>
+          <td><label for="naam"><b>Uw naam</b></label></td>
+          <td><input id="naam" type="text" name="naam"></td>
+        </tr>
+        <tr>
+          <td><label for="geboortedatum"><b>Uw geboortedatum</b></label></td>
+          <td><input id="geboortedatum" type="text" name="geboortedatum" placeholder="DD/MM/JJJJ"></td>
+        </tr>
+        <tr>
+          <td><label for="adres"><b>Uw adres</b></label></td>
+          <td><input id="adres" type="text" name="adres" placeholder="Straatnaam en huisnummer"></td>
+        </tr>
+        <tr>
+          <td><label for="woonplaats"><b>Uw woonplaats</b></label></td>
+          <td><input id="woonplaats" type="text" name="woonplaats"></td>
+        </tr>
+        <tr>
+          <td><label for="postcode"><b>Uw postcode</b></label></td>
+          <td><input id="postcode" type="text" name="postcode" minlength="6" maxlength="6" placeholder="1234AB"></td>
+        </tr>
+        <tr>
+          <td><label for="emailadres"><b>Uw e-mailadres</b></label></td>
+          <td><input id="emailadres" type="email" name="emailadres"></td>
+        </tr>
+        <tr>
+          <td><label for="telefoonnummer"><b>Uw telefoonnummer</b></label></td>
+          <td><input id="telefoonnummer" type="tel" name="telefoonnummer"></td>
+        </tr>
+      </tbody>
+    </table>
+  </fieldset>
+
+
+  <fieldset><legend><strong>Beschrijving van de klachten</strong></legend>
+      <table>
+      <thead>
+        <tr>
+          <th><strong style="float:left">Selecteer uw symptomen</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" name="klachten" value="stekende of zeurende pijn">Stekende of zeurende pijn</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="klachten" value="pijn bij het nuttigen van warme of koude voedingsmiddelen">Pijn bij het nuttigen van warme of koude voedingsmiddelen</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="klachten" value="zwelling aan uw wang of tandvlees">Zwelling aan uw wang of tandvlees</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="klachten" value="pijn tijdens het kauwen">Pijn tijdens het kauwen</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="klachten" value="roodkleuring van het tandvlees">Roodkleuring van het tandvlees</td>
+        </tr>
+      <tbody>
+      </table>
+      <br>
+
+      <table>
+        <tr>
+          <td><label for="fotobestand"><strong>Selecteer uw bestand</strong></label></td>
+        </tr>
+        <tr>
+          <td><input type="file" id="fotobestand" name="fotobestand" multiple><br><br></td>
+        </tr>
+      </table>
+    </fieldset>
+
+<fieldset>
+  <legend><strong>Toelichting van de klachten</strong>
+  </legend>
+    <table>
+      <tr>
+        <td><textarea name="toelichting" placeholder="Uw toelichting (max. 1500 woorden)" maxlength="1500"></textarea></td>
+      <tr>
+        <td><strong>Kies een datum en tijd voor uw afspraak</strong></td>
+      </tr>
+      <tr>
+        <td><input type="date" name="datum" min="2022-08-01" max="2022-12-31"></td>
+      </tr>
+      <tr>
+        <td><input type="time" name="tijd" min="08:00:00" max="16:30:00"></td>
+      </tr>
+      <tr>
+        <td><button type="submit" name="verzendknop"><strong>Verzend</strong></button></td>
+      </tr>
+  </table>
+</fieldset>
+
+</form>
+</body>
+</html>
